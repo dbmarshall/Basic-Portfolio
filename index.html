@@ -5,45 +5,47 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
-
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <title>Basic Portfolio :: David Morse</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-  <div class="container">
+  <div id="container">
 
     <header>
-      <div class="name">
-        <h1>David Morse</h1>
-      </div>
-      <div class="nav">
-        <p><a href="index.html">About</a> <span>|</span> <a href="portfolio.html">Portfolio</a> <span>|</span> <a href="contact.html">Contact</a></p>
+      <div class="mainwrapper">
+        <div id="name" class="tealback">
+          <h1>David Morse</h1>
+        </div>
+        <div id="nav">
+          <p><a href="index.html">About</a> <span>|</span> <a href="portfolio.html">Portfolio</a> <span>|</span> <a href="contact.html">Contact</a></p>
+        </div>
       </div>
     </header>
 
     <section id="main">
-      <div class="content">
-        <h1>About Me</h1>
-        <img src="assets/images/David-OldTown-Jerusalem.jpg" alt="me">
-        <p>I know my way around the front-end of web development, rising to peripheral challenges that have arisen over the years, a jack of all trades when needed.  I've managed projects, done some SEO, and lots more.  I've touched countless different technologies, lately focusing more on single-page applications.</p>
-        <p>On a personal level, I've collectively managed an all-volunteer, open-publishing social justice news website since 2004, as well as doing my own independent reporting, photography, and videography.  When not doing any of that, I love to unplug in the mountains during the winters, an avid snowboarder who loves deep powder.</p>
-      </div>
-      <div class="social">
-        <h1>Connect with Me</h1>
-
-        <a href="https://github.com/dbmarshall/"><img src="assets/images/social_if_github_square_black_107109.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/david-m/"><img src="assets/images/social_if_linkedin_334668.png" alt="LinkedIn"></a>
-        <a href="https://stackoverflow.com/users/3787666/david"><img src="assets/images/social_if_stackoverflow_273179.png" alt="Stack Overflow"></a>
-
+      <div class="mainwrapper">
+        <div class="content maincontent">
+          <h2 class="tealtext">About Me</h2>
+          <img src="assets/images/David-OldTown-Jerusalem.jpg" alt="me">
+          <p>I know my way around the front-end of web development, rising to peripheral challenges that have arisen over the years, a jack of all trades when duty calls.  I've managed projects, done some SEO, and lots more.  I've touched countless different technologies, lately focusing more on single-page applications.</p>
+          <p>On a personal level, I've volunteered with a collective that manages an open-publishing social justice news website since 2004, as well as doing my own independent reporting, photography, and videography.  When not doing all of those things, I love to unplug and head for the mountains in the winter, an avid snowboarder and powder hound. Bring it on, big sky.</p>
+        </div>
+        <div class="social maincontent">
+          <h3 class="tealtext">Connect with Me</h3>
+          <a href="https://github.com/dbmarshall/"><img src="assets/images/social_if_github_square_black_107109.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/david-m/"><img src="assets/images/social_if_linkedin_334668.png" alt="LinkedIn"></a>
+          <a href="https://stackoverflow.com/users/3787666/david"><img src="assets/images/social_if_stackoverflow_273179.png" alt="Stack Overflow" class="last"></a>
+        </div>
       </div>
     </section>
 
     <footer>
-      <div class="copyright">
-        <p>&copy; Copyright 2017 David Morse</p>
+      <div class="mainwrapper">
+        <div class="copyright">
+          <p>&copy; Copyright 2017 David Morse</p>
+        </div>
       </div>
     </footer>
 
